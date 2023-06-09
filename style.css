@@ -10,6 +10,10 @@ body {
   display: grid;
   place-content: center;
 }
+picture{
+  position: fixed;
+  top: 0;
+}
 
 img {
   max-width: 100%;
@@ -27,8 +31,9 @@ img {
   text-align: center;
 }
 .title h1 {
+  font-size: 2.5rem;
   color: hsl(300, 43%, 22%);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .title p {
   font-weight: 500;
@@ -71,7 +76,7 @@ img {
 .card {
   background-color: hsl(300, 43%, 22%);
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .card img {
   width: 2rem;
@@ -94,6 +99,8 @@ img {
 
 @media (min-width: 968px) {
   .container {
+    
+    background-repeat: no-repeat;
     max-width: 1140px;
     display: grid;
     gap: 2rem 5rem;
@@ -102,13 +109,12 @@ img {
   }
   .title {
     text-align: left;
-    padding-right: 6rem;
   }
   .title h1 {
-    font-size: 2.8rem;
+    width: 90%;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.1;
-    padding-right: 1rem;
   }
   .title p {
     font-weight: 500;
@@ -119,11 +125,11 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 220px;
+    min-height: 180px;
   }
   .ratings-wrapper .rating {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .ratings-wrapper .rating1 {
     align-self: flex-start;

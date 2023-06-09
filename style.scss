@@ -35,9 +35,12 @@ img{
 
 .title{
   text-align: center;
+  
   h1{
+    
+    font-size: 2.5rem;
     color:$magenta;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     
   }
   p{
@@ -85,7 +88,7 @@ img{
 .card{
   background-color: $magenta;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1.5rem;
 
     img{
       width: 2rem;
@@ -113,13 +116,13 @@ img{
   
   
 }
-
-
-
-
 @media(min-width:968px){
 
   .container{
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    
+   
+    background-repeat: no-repeat;
     max-width: 1140px;
     display: grid;
     gap:2rem 5rem;
@@ -128,13 +131,13 @@ img{
   }
   .title{
     text-align: left;
-    padding-right:6rem;
+    
     
     h1{
-      font-size: 2.8rem;
+      width: 90%;
+      font-size: 2.5rem;
       font-weight: 800;
       line-height: 1.1;
-      padding-right:1rem;
       
     }
     p{
@@ -148,13 +151,14 @@ img{
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      min-height: 220px;
-
-       .rating{
+      min-height: 180px;
+      
+      
+      .rating{
         display: flex;
-        justify-content: space-evenly;
-       }
-
+        justify-content: space-around;
+      }
+      
       
 
       .rating1{
@@ -185,16 +189,16 @@ img{
 
     
   
-      .card1{
-        align-self: flex-start;
-      }
-      .card2{
-        align-self: center;
-      }
-      .card3{
-        align-self: flex-end;
-      }
-    }
+  .card1{
+    align-self: flex-start;
+  }
+  .card2{
+    align-self: center;
+  }
+  .card3{
+    align-self: flex-end;
+  }
+}
 
 }
 
